@@ -1,10 +1,10 @@
 html,body{
-    background-color: aquamarine;
+    background-color: rgb(190, 190, 190);
     margin-left: 10%;
     margin-right: 10%;
     font-family: sans-serif;
 }
-
+/* Style for the grid container */
 .snakeContainer {  display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr .01fr;
@@ -16,10 +16,11 @@ html,body{
       "snakeLower1 snakeLower2"
       "backButton backButton";
   }
+  /* Style for the containers in the grid - some general and some specifically for each container */
   .snakeLower1,.snakeUpper1,.snakeLower2,.snakeUpper2{
 
     min-height: 23em;
-    max-height: 23em;
+    max-height: 25em;
     max-width: 32em;
     border-radius: 2%;
     padding-left: 2%;
@@ -31,7 +32,7 @@ html,body{
   
   .snakeUpper1 { 
     grid-area: snakeUpper1; 
-    background-color: aquamarine;
+    background-color:rgb(190, 190, 190);
 }
   
   .snakeUpper2 { 
@@ -42,7 +43,7 @@ html,body{
   
   .snakeLower2 { 
     grid-area: snakeLower2; 
-    background-color: aquamarine;
+    background-color: rgb(190, 190, 190);
 
 }
   
@@ -51,15 +52,16 @@ html,body{
     box-shadow: 5px 5px 10px;
 }
 
+/* relatively static styling for the images */
 .snakeImage {
     min-height: 23em;
-    max-height: 23em;
-    min-width: 31em;
-    max-width: 31em;
+    max-height: 25em;
+    min-width: 29em;
+    max-width: 29em;
     box-shadow: 5px 5px 10px;
 
 }
-
+/* font and minor position changes for text and lists */
 .snakeTitle{
     font-size: x-large;
     margin-top: .5%;
@@ -75,14 +77,67 @@ ul {
     list-style: none;
     margin-top: 5%;
 }
-
+/*Button styling for back button and link*/
 .backButton{
-    height: 3em;
-    width: 80%;
-    margin-left: 10%;
+    font-size: 110%;
     box-shadow: 5px 5px 10px;
-
 }
 
+a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+/* Style for the fan club container */
+.fanClubContainer {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Style for the fan club header,body, and labels*/
+.fanClubHeader {
+    text-align: center;
+}
+
+
+.fanClubBody {
+    padding: 20px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+/* Style for the form input fields */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 4px;
+}
+
+/* Style for the sign up button */
+input[type="submit"], .backButton {
+    width: 100%;
+    background-color: #54b757;
+    color: rgb(243, 243, 243);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+input[type="submit"], .backButton:hover {
+    background-color: #45a
+
+}
 
   
